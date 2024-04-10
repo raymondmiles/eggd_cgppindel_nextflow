@@ -1,5 +1,5 @@
 nextflow.enable.dsl=2
-include {CGPPINDEL} from './modules/CGPINDEL'
+include {CGPPINDEL} from './modules/CGPPINDEL'
 
 // run -> Bare minimum
 
