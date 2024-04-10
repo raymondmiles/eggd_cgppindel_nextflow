@@ -4,7 +4,7 @@ include {CGPPINDEL} from './modules/CGPPINDEL'
 // run -> Bare minimum
 
 workflow{
-    CGPINDEL( 
+    CGPPINDEL( 
     params.docker_image_name, params.reference, params.simrep, params.genes, \
     params.unmatched, params.assembly, params.seqtype,  \
     params.filter, params.tumour,params.normal)          
