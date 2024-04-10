@@ -6,6 +6,8 @@ set -e -x -o pipefail
 
 main() {
 
+
+    echo "Value of docker_image: '$docker_image_name'"
     echo "Value of reference: '$reference'"
     echo "Value of simrep: '$simrep'"
     echo "Value of genes: '$genes'"

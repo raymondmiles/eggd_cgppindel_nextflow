@@ -4,6 +4,7 @@ process CGPINDEL {
 
     input:
 
+        val docker_image_name
         val reference
         val simrep
         val genes

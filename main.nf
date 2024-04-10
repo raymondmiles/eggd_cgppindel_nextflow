@@ -5,7 +5,7 @@ include {CGPPINDEL} from './modules/CGPINDEL'
 
 workflow{
     CGPINDEL( 
-    params.reference, params.simrep, params.genes, \
+    params.docker_image_name, params.reference, params.simrep, params.genes, \
     params.unmatched, params.assembly, params.seqtype,  \
     params.filter, params.tumour,params.normal)          
     // params.reference = "file-Fy4gjFj41zgGjKJ85FYYPX4q", params.simrep = "file-Fz0Q2GQ41zgB8BK7143y65Q1", \
