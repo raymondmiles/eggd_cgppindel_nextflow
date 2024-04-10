@@ -35,7 +35,7 @@ process CGPPINDEL {
     echo "Value of filter: '$filter'"
     echo "Value of tumour: '$tumour'"
     echo "Value of normal: '$normal'"
-    bash nextflow-bin/cgpindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter $tumour $normal
+    bash nextflow-bin/cgppindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter $tumour $normal
     """
 
 
