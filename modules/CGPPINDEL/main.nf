@@ -20,7 +20,7 @@ process CGPINDEL {
 
     output:
 
-    path ""
+    path "out/cgppindel_output"
 
 
     script:
