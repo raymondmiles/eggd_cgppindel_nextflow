@@ -1,4 +1,4 @@
-process CGPINDEL {
+process CGPPINDEL {
 
     debug true
 
