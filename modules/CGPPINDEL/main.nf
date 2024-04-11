@@ -1,4 +1,6 @@
 process CGPPINDEL {
+    tag "${bam[0]}, ${bam[1]}"
+    tag "${bam[2]}, ${bam[3]}"
 
     debug true
 
@@ -12,8 +14,8 @@ process CGPPINDEL {
         val assembly
         val seqtype
         val filter
-        val bam_pairs_tumour
-        val bam_pairs_normal
+        tuple val(sample_id_tumour), path(bam_tumour)
+        tuple val(sample_id_normal), path(bam_normal)
 
 
 
@@ -35,7 +37,7 @@ process CGPPINDEL {
     echo "Value of filter: '$filter'"
     echo "Value of tumour: '$bam_pairs_tumour'"
     echo "Value of normal: '$bam_pairs_normal'"
-    bash nextflow-bin/cgppindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter $bam_pairs_tumour $bam_pairs_normal
+    bash nextflow-bin/cgppindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter ${bam[0]} ${bam[1]} ${bam[3]} ${bam[4]}
     """
 
 
