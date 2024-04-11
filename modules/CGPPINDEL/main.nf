@@ -12,8 +12,8 @@ process CGPPINDEL {
         val assembly
         val seqtype
         val filter
-        val sorted_tumour
-        val sorted_normal
+        val bam_pairs_tumour
+        val bam_pairs_normal
 
 
 
@@ -33,9 +33,9 @@ process CGPPINDEL {
     echo "Value of assembly: '$assembly'"
     echo "Value of seqtype: '$seqtype'"
     echo "Value of filter: '$filter'"
-    echo "Value of tumour: '$sorted_tumour'"
-    echo "Value of normal: '$sorted_normal'"
-    bash nextflow-bin/cgppindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter $sorted_tumour $sorted_normal
+    echo "Value of tumour: '$bam_pairs_tumour'"
+    echo "Value of normal: '$bam_pairs_normal'"
+    bash nextflow-bin/cgppindel.sh $reference $simrep $genes $unmatched $assembly $seqtype $filter $bam_pairs_tumour $bam_pairs_normal
     """
 
 
