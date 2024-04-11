@@ -26,8 +26,8 @@ process CGPPINDEL {
 
     script:
     """
-    echo "Value of reference: '$reference'"
-    echo "Value of simrep: '$simrep'"
+    echo "Value of reference: $reference"
+    echo "Value of simrep: $simrep"
     echo "Value of genes: '$genes'"
     echo "Value of unmatched: '$unmatched'"
     echo "Value of assembly: '$assembly'"
