@@ -1,8 +1,6 @@
 process CGPPINDEL {
-    tag "${bam[0]}, ${bam[1]}"
-    tag "${bam[2]}, ${bam[3]}"
+    tag "${sample_id_tumour}, ${sample_id_normal}"
 
-    debug true
 
     input:
 
